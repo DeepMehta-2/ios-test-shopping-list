@@ -63,39 +63,7 @@ class ViewController: UIViewController {
     @IBAction func stepper5(_ sender: UIStepper) {
         itemQuan5.text = String(Int(sender.value))
     }
- 
-    // Cancel Button Function to Reset everything
 
-    @IBAction func cancelbtn(_ sender: UIButton) {
-        ListNameText.text = "Shopping List"
-        
-        let emptystr = ""
-        
-        itemQuan1.text = String(0)
-        itemQuan2.text = String(0)
-        itemQuan3.text = String(0)
-        itemQuan4.text = String(0)
-        itemQuan5.text = String(0)
-        
-        itemNameText1.text = emptystr
-        itemNameText2.text = emptystr
-        itemNameText3.text = emptystr
-        itemNameText4.text = emptystr
-        itemNameText5.text = emptystr
-    }
-    
-// Showing the shopping list in the debugger on save button click
-    
-    @IBAction func Savebtn(_ sender: UIButton) {
-        print("ShoppingList Name" , ListNameText.text)
-        print(itemNameText1.text , itemQuan1.text)
-        print(itemNameText2.text , itemQuan2.text)
-        print(itemNameText3.text , itemQuan3.text)
-        print(itemNameText4.text , itemQuan4.text)
-        print(itemNameText5.text , itemQuan5.text)
-
-    }
-    
  
 }
 
